@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "adsf",
+      "email": "asdfasf@asasfdaf",
+      "mobile": "333",
+      "address": "adfa",
+      "services": "asdfasfasfasfas"
+    },
+    {
+      "id": 4,
+      "name": "asdfasfasf",
+      "email": "asfasf@asdasfasf",
+      "mobile": "5",
+      "address": "asdfafdf",
+      "services": "asdfafafas"
+    },
+    {
+      "id": 5,
+      "name": "asdfsa",
+      "email": "asdfasfs@asfsdaffasf",
+      "mobile": "56465464564",
+      "address": "adfasfas",
+      "services": "asfdasfasdfasf"
+    },
+    {
+      "id": 7,
+      "name": "asdfafasf",
+      "email": "dfghfh@sfgdgsg",
+      "mobile": "111111",
+      "address": "asdfas",
+      "services": "asdfafa"
+    },
+    {
+      "id": 8,
+      "name": "asdfasf",
+      "email": "asdfasf@asfdsfas",
+      "mobile": "564664",
+      "address": "asdfas",
+      "services": "asfdasf"
+    },
+    {
+      "id": 9,
+      "name": "asdfasfa",
+      "email": "asdfsafsa@asdffa",
+      "mobile": "77777",
+      "address": "adsfas",
+      "services": "asfdasfasdfas"
+    },
+    {
+      "id": 10,
+      "name": "asfasfasf",
+      "email": "asdfaas@dasfassafa",
+      "mobile": "4444",
+      "address": "asdfa",
+      "services": "asdfasf"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
