@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorInfo } from '../../enums/author-info.enum';
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {Restaurant} from "../../models/restaurant.model";
 import {ApiService} from "../../services/api.service";
@@ -18,7 +17,6 @@ export class DashboardComponent implements OnInit {
   restaurantsData: any;
   showAdd!: boolean;
   showBtn!: boolean;
-  authorSite: string = AuthorInfo.Site;
 
   constructor(private formBuilder: FormBuilder, private api: ApiService) { }
 
@@ -85,15 +83,16 @@ export class DashboardComponent implements OnInit {
     this.restaurantModel.mobile = this.formValue.value.mobile;
     this.restaurantModel.address = this.formValue.value.address;
     this.restaurantModel.services = this.formValue.value.services;
-    this.api.updateRestaurant(this.restaurantModel, this.restaurantModel.id).subscribe(
-      () => {
-        alert('Item updated!');
-        this.clearForm();
-        this.getRests();
-      },
-      (err) => {
-        this.throwError(err);
-      })
+    this.api.updateRestaurant(this.restaurantModel, this.restaurantModel.id)
+        .subscribe(
+          () => {
+            alert('Item updated!');
+            this.clearForm();
+            this.getRests();
+          },
+          (err) => {
+            this.throwError(err);
+          })
   };
 
   throwError(err: any): void {

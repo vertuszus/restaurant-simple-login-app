@@ -1,1 +1,38 @@
-<p>signup works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Restaurant Signup</h1>
+          <h5>Get Free Membership</h5>
+        </div>
+        <form [formGroup]="signupForm"(ngSubmit)="signUp()" >
+          <div class="mb-3">
+            <label class="form-label label-name">Name</label>
+            <input formControlName="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp1">
+          </div>
+          <div class="mb-3">
+            <label class="form-label label-mobile">Mobile number</label>
+            <input formControlName="mobile" type="number" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp2">
+          </div>
+          <div class="mb-3">
+            <label class="form-label label-email">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp3">
+          </div>
+          <div class="mb-3">
+            <label class="form-label label-pass">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary login-btn">Signup</button>
+        </form>
+        <div class="login-link-text">
+          <a routerLink="/login">Already signed? Click to Login!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.card {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.text-center {
+  margin-bottom: 30px;
+}
+
+.label-login {
+  margin-left: 55px;
+}
+
+.label-pass {
+  margin-left: 70px;
+}
+
+.form-check {
+  margin-left: 40px;
+}
+
+.login-btn {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.signup-link-text {
+  margin-top: 20px;
+}

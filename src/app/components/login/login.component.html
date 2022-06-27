@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Restaurant Login</h1>
+          <h5>Feel Free to Login</h5>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label label-login">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label label-pass">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary login-btn">Login</button>
+        </form>
+        <div class="signup-link-text">
+          <a routerLink="/signup">New User? Click to Signup!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

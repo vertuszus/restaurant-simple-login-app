@@ -3,30 +3,19 @@
     <h2>Restaurant Info App</h2>
     <div class="d-flex">
       <button
-        type="button" class="btn btn-success"
+        type="button" class="btn btn-primary"
         data-bs-toggle="modal" data-bs-target="#exampleModal"
         (click)="clickAddResto()"
       >Add Restaurant</button>
+      <button
+        type="button" class="btn btn-primary"
+        routerLink="/login"
+      >Logout</button>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron">
-  <div class="p-3 mb-4 bg-light rounded-3">
-    <div class="container-fluid">
-      <h1 class="display-6 fw-bold">Restaurant Catalog Management</h1>
-      <p class="col-md-8 fs-4">You can save catalog of restaurants here!</p>
-      <a
-        class="btn btn-primary btn-lg"
-        type="button"
-        href="{{ authorSite }}"
-        target="_blank"
-      >
-        Github
-      </a>
-    </div>
-  </div>
-</div>
+<app-jumbotron-info></app-jumbotron-info>
 
 <table class="table mt-4">
   <thead>
@@ -50,8 +39,8 @@
     <td>{{ data.address }}</td>
     <td>{{ data.services }}</td>
     <td>
-      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="loadRestData(data)">Edit</button>&nbsp;
-      <button class="btn btn-danger" (click)="deleteRest(data.id)">Delete</button>
+      <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="loadRestData(data)">Edit</button>&nbsp;
+      <button class="btn btn-primary" (click)="deleteRest(data.id)">Delete</button>
     </td>
   </tr>
   </tbody>
