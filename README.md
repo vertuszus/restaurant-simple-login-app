@@ -1,5 +1,9 @@
 # RestaurantSimpleLoginApp
 
+npm install
+json-server --watch db.json
+npm start
+
 ![image](https://user-images.githubusercontent.com/72495167/175930430-da002ea8-4490-44d3-8561-174ea1a093d8.png)
 
 ![image](https://user-images.githubusercontent.com/72495167/175930390-f6e9f006-9155-4b4b-8d61-09dea18f02e6.png)
@@ -7,8 +11,6 @@
 ![image](https://user-images.githubusercontent.com/72495167/175930484-c714c661-e3b3-4468-9f71-5a6fe0c465e3.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
-
-npm install && npm start
 
 ## Development server
 
