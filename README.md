@@ -1,8 +1,6 @@
 # RestaurantSimpleLoginApp
 
-npm install
-json-server --watch db.json
-npm start
+npm install && json-server --watch db.json && npm start
 
 ![image](https://user-images.githubusercontent.com/72495167/175930430-da002ea8-4490-44d3-8561-174ea1a093d8.png)
 
